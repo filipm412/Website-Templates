@@ -1,0 +1,371 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+html {
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+
+/**********NAV SECTION********/
+
+nav {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    position: fixed;
+    text-align: left;
+    box-shadow: 0px 0px 8px -2px black;
+    display: inline;
+    top: 0%;
+    z-index: 1;
+    background-color: white;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    padding: 8px;
+    
+}
+a:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+nav > a:nth-child(2) {
+    float: right;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+nav > a:nth-child(3) {
+    float: right;
+    margin: 8px 20px 0 20px;
+}
+nav > a:nth-child(4) {
+    float: right;
+    margin-top: 8px;
+}
+nav > a:nth-child(1) {
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 48px;
+}
+
+
+/*******HERO SECTION******/
+
+#hero-section {
+    width: 1600px;
+    height: 800px;
+    margin: 50px auto;
+    position: relative;
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero-section::after {
+    content: 'Delicious Burritos';
+    font-size: 50px;
+    position: relative;
+    top: 90%;
+    left: 2%;
+    color: white;
+    font-weight: bold;
+    filter: opacity(0.7);
+    
+}
+
+/******ABOUT SECTION******/
+
+#about-section {
+    width: 1600px;
+    height: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: solid 0.5px wheat;
+    
+}
+#about-photo {
+    width: 600px;
+    height: 750px;
+    background-image: url(about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    
+}
+#about-text {
+    display: inline-block;
+    width: 600px;
+    height: 750px;
+    position: relative;
+    top: -13%;
+    margin-left: 30px;
+    text-align: left;
+}
+#about-text > h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+#about-text > h4 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+#about-text > p {
+    line-height: 2em;
+}
+
+/*******MENU STYLE******/
+
+#menu-section {
+    width: 1600px;
+    height: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: solid 0.5px wheat;
+}
+#menu {
+    display: inline-block;
+    width: 600px;
+    height: 750px;
+    margin: 25px 0 auto;
+    text-align: left;
+    position: relative;
+    top: -25%;
+    
+}
+#menu > h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+.menu-item {
+    letter-spacing: 3px;
+}
+.menu-recipe {
+    color: grey;
+    font-size: 16px;
+}
+
+#menu > div {
+    margin: 50px 0;
+}
+#menu-photo {
+    display: inline-block;
+    width: 600px;
+    height: 750px;
+    margin: 25px auto;
+    background-image: url(menu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*******CONTACT SECTION*******/
+
+#contact-section {
+    width: 1600px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#contact-section > h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 70px;
+    margin-top: 100px;
+}
+
+form {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.first-input-class {
+    display: block;
+    width: 1200px;
+    margin: 30px 0;
+    padding: 15px 5px;
+    border: none;
+    border-bottom: solid 0.5px grey;
+}
+#submit {
+    padding: 10px 50px;
+    border: none;
+    font: 20px;
+}
+#submit:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+
+/******FOOTER SECTION*******/
+
+#footer-section {
+    width: 100%;
+    height: 100px;
+    background-color: #f1f1f1;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+#footer-section > p {
+    line-height: 110px;
+    margin: 0;
+}
+
+
+
+
+/*******MEDIA QUERIES*********/
+
+
+@media screen and (max-width:768px)  {
+    #hero-section {
+        width: 100%;
+        height: 600px;
+    }
+    #hero-section::after {
+        font-size: 30px;
+        
+    }
+    #about-section {
+        width: 100%;
+        height: 100vh;   
+    }
+    #about-text {
+        display: block;
+        width: 100%;
+        height: 50vh;
+        top: 0%;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    #about-photo {
+        width: 100%;
+        height: 50vh;
+        display: block;
+        position: relative;
+        top: 0%;
+        margin-left: 0px;
+        text-align: left;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    #about-text > p {
+        width: 90%;
+        height: 30vh;
+        text-align: justify;
+        margin: 0 auto;
+        overflow: scroll;
+    }
+    #menu-section {
+        width: 100%;
+        height: 120vh;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: solid 0.5px wheat;
+    }
+    #menu {
+        display: block;
+        width: 100%;
+        height: 60vh;
+        margin: 25px 0 auto;
+        text-align: left;
+        position: relative;
+        top: 0%;
+        
+    }
+    #menu > h1 {
+        text-align: center;
+        letter-spacing: 5px;
+        margin-bottom: 50px;
+    }
+    
+    #menu > div {
+        margin: 50px auto;
+        width: 90%;
+    }
+    #menu-photo {
+        display: block;
+        width: 100%;
+        height: 50vh;
+        margin: 20px auto;
+    }
+    #contact-section {
+        width: 100%;
+        height: 55vh;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #contact-section > h1 {
+        text-align: center;
+        letter-spacing: 5px;
+        margin-bottom: 70px;
+        margin-top: 100px;
+    }
+    
+    form {
+        width: 90%;
+        height: 55vh;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    .first-input-class {
+        display: block;
+        width: 100%;
+        margin: 30px 0;
+        padding: 15px 5px;
+        border: none;
+        border-bottom: solid 0.5px grey;
+    }
+    #submit {
+        padding: 10px 50px;
+        border: none;
+        font-size: 20px;
+    }
+    #submit:hover {
+        cursor: pointer;
+        background-color: gray;
+    }
+    
+}
+@media screen and (max-width:525px) {
+    nav > a:nth-child(2) {
+        display: none;
+    }
+    nav > a:nth-child(3) {
+        display: none;
+    }
+    nav > a:nth-child(4) {
+        display: none;
+    }
+    #menu {
+        height: 80vh;
+    }
+    #about-section {
+        height: 105vh;
+    }
+    #menu-section {
+        height: 132vh;
+        
+    }
+}
